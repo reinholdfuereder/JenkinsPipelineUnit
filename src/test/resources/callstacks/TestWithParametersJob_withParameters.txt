@@ -1,0 +1,5 @@
+   withParameters.run()
+      withParameters.string({name=my_param, defaultValue=my default value, description=My parameter})
+      withParameters.parameters([{name=my_param, defaultValue=my default value, description=My parameter}])
+      withParameters.properties([null])
+      withParameters.echo('my_param' value is default: my default value)
