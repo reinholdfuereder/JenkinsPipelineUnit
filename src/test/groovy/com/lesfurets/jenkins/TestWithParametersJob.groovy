@@ -25,6 +25,8 @@ class TestWithParametersJob extends BaseRegressionTest {
             params.forEach { param ->
                 if (param instanceof Map) {
                     addParam(param.name as String, param.defaultValue, false)
+                } else {
+                    throw new IllegalStateException("Unexpected parameters param: ${param}")
                 }
             }
         })
